@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="coman.css">
+  <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/56b0121567.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="font-family:Titillium Web;">
+
+
+<!--part-1 navigation bar -->
+  <div class="nav">
+    <div class="nav-logo">
+      <img src="home-page-img//hit-logo.jpg" alt="" height="25px">
+    </div>
+    <div class="nav-items">
+      <a href="shop.html" target="_parent">Shop</a>
+      <a href="#">Collabrotion</a>
+      <a href="#">Compare</a>
+      <a href="#">Blog</a>
+      <a href="./about-us.html">About</a>
+      <a href="#">Features</a>
+    </div>
+    <div class="nav-icons">
+      <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href=""><i class="fa-brands fa-opencart"></i></a>
+      <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+  </div>
+  </div>
+
+  <!-- part-2 header -->
+  <div class="main-galary-container">
+    <div class="galary-container">
+      <div class="header-contant">
+        <h5>High-end Headphones</h5>
+        <h1 class="h1">High-Performance Sound</h1>
+        <h1 class="tool">tools</h1>
+        <div class="header-contant-a"><a href="shop.html">Discover Collection</a></div>
+      </div>
+      <div class="galary">
+        <div class="galary-image"><img src="home-page-img/product-1.webp" alt=""></div>
+        <div class="galary-image"><img src="home-page-img/product-2.webp" alt=""></div>
+        <div class="galary-image"><img src="home-page-img/product-3.webp" alt=""></div>
+        <div class="galary-image"><img src="home-page-img/product-4.webp" alt=""></div>
+        <div class="galary-image"><img src="home-page-img/product-5.webp" alt=""></div>
+        <div class="galary-image"><img src="home-page-img/product-6.jpg" alt=""></div>
+        <div class="galary-image"><img src="home-page-img/product-7.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const slider = document.querySelector('.galary');
+        let slides = document.querySelectorAll('.galary-image');
+        slides.forEach(slide => {
+            let clone = slide.cloneNode(true);
+            slider.appendChild(clone);
+        });
+        let currentIndex = 0;
+        const slideWidth = slides[0].offsetWidth + 10;
+        function nextSlide() {
+            currentIndex++;
+            slider.style.transition = "transform 1s ease-in-out";
+            slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+            setTimeout(() => {
+                if (currentIndex >= slides.length) {
+                    slider.style.transition = "none";
+                    slider.style.transform = `translateX(0)`;
+                    currentIndex = 0;
+                }
+            }, 1000);
+        }
+        setInterval(nextSlide, 3000);
+  </script>
+
+<!--part-4 slider -->
+  <div class="slider">
+    <div>
+      <span class="text-gradient "
+        style="--gradient: linear-gradient(90deg, rgba(77, 82, 60, 1), rgba(133, 141, 103, 1) 100%)">
+        Mastery is a never-ending exploration </span>
+    </div>
+  </div>
+
+
+<!--part-5 set -->
+  <div class="set">
+    <div class="sets">
+      <img src="home-page-img/product-9.jpg" alt="">
+      <div class="text"><b>Lightweight luxury<br>
+          earphone</b>
+      </div>
+    </div>
+    <div class="sets">
+      <img src="home-page-img/product-7.webp" alt="">
+      <div class="text"><b>Upgred your listing<br>
+          experience</b></div>
+    </div>
+    <div class="sets">
+      <img src="home-page-img/product-8.webp" alt="">
+      <div class="text"><b>Discover Excluse<br>
+          Collabrotions</b>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!--part-6 bs-->
+  <div class="ytu">
+    <h1><b>Best seller </b></h1>
+  </div>
+
+  <div class="bss">
+    <div class="bs">
+      <img width="100%" src="home-page-img/item-1.webp" alt="" />
+      <div class="text2">
+        Boat Airpods 161 Wireless Earbuds with IPX5 Water & Sweat Resistance</div>
+    </div>
+    <div class="bs">
+      <img width="100%" src="home-page-img/product-11.webp" alt="" />
+      <div class="text2">
+        MW08 Sport (Green Sapphire Glass / Black Kevlar® Case)</div>
+    </div>
+    <div class="bs">
+      <img width="100%" src="home-page-img/product-12.webp" alt="" />
+      <div class="text2">JBL Go4 ultra-portable Bluetooth speaker with big JBL Pro-sound</div>
+    </div>
+    <div class="bs">
+      <img width="100%" src="home-page-img/product-13.webp" alt="" />
+      <div class="text2">OnePlus Bullets Wireless Z2 ANC</div>
+    </div>
+  </div>
+
+
+<!--part-7 mw08 -->
+  <div class="grd">MW08</div>
+  <div class="tu">
+    <b>A leap forward in sound and design</b>
+  </div>
+  <div class="tu1">
+    <b>Crafted from ceramic and stainless steel, the MW08 wireless earbuds features Hybrid Active Noise-
+      <br>Cancellation, a streamlined form designed for comfort, and a new wind-reducing talk solution with 6
+      <br>microphones.</b>
+  </div>
+  <center><button class="but">Shop MW08 Sport</button></center>
+  <div class="im2">
+    <img src="home-page-img/product-14.webp">
+  </div>
+
+
+<!--part-8 video -->
+  <div class="part-1">
+    <div class="part-1-1">
+      <video style="height: 615px;width: 100%;object-fit: cover;border-radius: 20px;" autoplay muted
+        src="home-page-img/2.mp4" type="video/mp4"></video>
+    </div>
+    <div class="part-1-2">
+      <div class="part-2-1">
+        <img style="height: 300px;width: 100%; border-radius: 20px;" src="home-page-img/product-6.webp" alt="">
+        <div class="text3">
+          <b> MW08 SPORT</b>
+        </div>
+      </div>
+      <div class="part-2-2">
+        <img style="height: 300px; width: 100%; border-radius: 20px;" src="home-page-img/product-15 .webp" alt="">
+        <b class="text3">ACCESSORIES</b>
+      </div>
+      <div class="part-2-3">
+        <img src="home-page-img/product-16.webp " alt="">
+      </div>
+    </div>
+  </div>
+
+<!-- part-9 logos -->
+  <div class="brand">
+    <h4 style="margin-bottom: 0;color: rgb(230, 93, 93);">PARTNERS</h4><b>Our trusted brands </b>
+  </div>
+  <div class="logos">
+    <div class="logo">
+      <a href="https://www.apple.com/in/airpods" target="_blank">
+        <img src="home-page-img/logo-1.jpg" ></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.samsung.com/in/" target="_blank">
+        <img src="home-page-img/logo-16.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.oneplus.in/oneplus-buds" target="_blank"><img src="home-page-img/logo-3.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.gonoise.com/" target="_blank"><img src="home-page-img/logo-7.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.oppo.com/in/audio/" target="_blank"><img src="home-page-img/logo-4.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.jbl.com/" target="_blank"><img src="home-page-img/logo-5.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.boat-lifestyle.com/" target="_blank"><img src="home-page-img/logo-6.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.realme.com/in/realme-buds-air-6" target="_blank"><img src="home-page-img/logo-2.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.masterdynamic.com" target="_blank"><img src="home-page-img/logo-8.png"
+          ></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.mivi.in" target="_blank"><img src="home-page-img/logo-9.png"
+          ></a>
+    </div>
+    <div class="logo">
+      <a href="https://zebronics.com/" target="_blank"><img src="home-page-img/logo-10.png"
+          ></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.artis.in/" target="_blank"><img src="home-page-img/logo-11.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://kdmindia.in/" target="_blank"><img src="home-page-img/logo-12.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.skullcandy.in" target="_blank"><img src="home-page-img/logo-13.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.sony.co.in" target="_blank"><img src="home-page-img/logo-14.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://evmzone.com/" target="_blank"><img src="home-page-img/logo-15.png"></a>
+    </div>
+    <div class="logo">
+      <a href="https://syska.co.in/" target="_blank"><img src="home-page-img/logo-17.png"></a>
+    </div>
+  </div>
+
+
+<!--part-10 footer -->
+  <div class="footers">
+    <div class="footer" style="font-family:Titillium Web;">
+      <div class="footer-p1">
+        <img src="home-page-img/hit-logo1.jpg" alt="">
+        <h3>HEAD OFFICE</h3>
+        <a>101/102, 1st Floor, 346, Golden Plaza, Dr.H.P Marg, Aashram Road, Ahmdabad-380001</a>
+        <h3>SERVICE CENTER</h3>
+        <a>Shop No-403, 404, 405 Sardar Mall, Opp.VIP Squre, Uttaran, Surat-410009 </a>
+        <div class="mail"><a href="mailto:hitp927@gmail.com">
+            <h2>support@hits'store.com |</h2>
+          </a>
+          <a href="tel:7623032296">
+            <h2>&nbsp;180 010 555</h2>
+          </a>
+        </div>
+      </div>
+      <div class="SA">
+        <h3 style="padding-left: 10px;">Shop Audio</h3>
+        <a>Earbuds</a><br>
+        <a>Neckbands</a><br>
+        <a>Wired Earphones</a><br>
+        <a>Party Speaker</a><br>
+        <a>Home Audio</a><br>
+        <a>Soundbar</a><br>
+        <a>Bluetooth Speakers</a><br>
+        <a>2.0 USB PC Speakers</a><br>
+      </div>
+      <div class="SA">
+        <h3 style="padding-left: 10px;">Support</h3>
+        <a>Buy Authentic</a><br>
+        <a>Authorized Dealres</a><br>
+        <a>Shipping Information</a><br>
+        <a>Returns</a><br>
+        <a>Warranty Request</a><br>
+        <a>FAQs</a><br>
+        <a>Accessibility</a><br>
+        <a>Product Support</a><br>
+        <a>Order Status</a><br>
+        <a>Bulk Order</a><br>
+      </div>
+
+      <div class="SA">
+        <h3 style="padding-left: 10px;">About Us</h3>
+        <a>Buy Authentic</a><br>
+        <a>Authorized Dealres</a><br>
+        <a>Shipping Information</a><br>
+        <a>Returns</a><br>
+        <a>Warranty Request</a><br>
+        <a>FAQs</a><br>
+        <a>Accessibility</a><br>
+        <a>Product Support</a><br>
+        <a>Order Status</a><br>
+        <a>Bulk Order</a><br>
+      </div>
+
+      <div class="SA1">
+        <h3 style="padding-left: 10px;">WE ACCEPT :</h3>
+        <a><img src="home-page-img/payment-lighte.webp" alt=""></a>
+        <h3 style="padding: 50px 0 0 10px;">SOCIAL :</h3>
+        <div class="social">
+          <a href="https://www.facebook.com/"  target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/hit_patel_65?igsh=MmdxczI0OXF5dHQz"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="tel:7623032296"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+      </div>
+    </div>
+    <div class="srl-btn"><button class="scroll-up" id="scrollupbtn">↑</button></div>
+    <script>
+      let scrollupbtn = document.getElementById("scrollupbtn");
+      window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollUpBtn.style.display = "flex";
+        } else {
+          scrollUpBtn.style.display = "none";
+        }
+      };
+      scrollupbtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+    <hr class="hr">
+    <div class="cr" style="font-family:Titillium Web;">
+      <h5>Copyright&#169; 2025-HIT'STORE, Inc. All rights reserved.</h5>
+      <h5 style="margin-left: 65%;">Terms os use&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;privacy policy</h5>
+    </div>
+  </div>
+
+</body>
+</html>

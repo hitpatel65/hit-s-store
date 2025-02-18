@@ -1,0 +1,299 @@
+*{
+    font-family: titillium web;
+    margin: 0;
+    padding: 0;
+  }
+
+/* marque */
+
+.marque {
+margin-bottom: 20px;
+top: 9%;
+position: fixed;
+z-index: 5;
+background-image: linear-gradient(90deg,
+rgba(49, 66, 105, 1) 20%,
+rgba(136, 159, 185, 1) 45%,
+rgba(183, 148, 131, 1) 98%);
+width:100%;
+height: 55px;
+overflow: hidden;
+/* position: relative; */
+display: flex;
+}
+.marque div {
+padding-top: 10px;
+display: block;
+width: 100%;
+position: absolute;
+animation: marquee 25s linear infinite;
+}
+.marque span {
+padding: 10px 10px 0 0;
+font-size: 34px;
+box-sizing: border-box;
+}
+
+@keyframes marquee {
+0% {
+left: 100%;
+}
+
+100% {
+left: -100%;
+}
+}
+
+
+    .slider-container {
+        padding-top: 150px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .slider-wrapper {
+        overflow: hidden;
+    }
+    .slider {
+        display: flex;
+        gap: 10px;
+        transition: transform 0.5s ease-in-out;
+        white-space: nowrap;
+    }
+    .slide {
+        flex: 0 0 auto;
+        width: 240px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .slider img {
+        width: 100%;
+        border-radius: 4px;
+        height: 240px;
+    }
+    .btn {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        margin: 8px;
+      
+        border-radius: 50px;
+    }
+    .btn:hover{
+      background-color: black;
+    }
+    .shop-text{ 
+      text-align: center;
+      margin-bottom: 10px;
+      }
+      .shop-text img{
+      height: 30px;
+      width: 30px;
+      }
+    .image h3{
+      text-align: center;
+      background-color: yellow;
+      font-size: 16px;
+    }
+    .slide h4{
+      text-align: center;
+    }
+ 
+    .h6{
+      margin: 12px 0 8px 10px
+    }
+    .del{
+      margin: 12px 0 8px 10px;
+      font-size: 12px;
+    }
+    .slide p{
+      font-weight: 700;
+      font-size: 22px;
+      margin: -30px 0px 0px 74px;
+      color: green;
+      display: flex;
+      flex-wrap: wrap;
+    }
+/* neck-band */
+    .nb h4{
+      text-align: center;
+    }
+    .nb p{
+      font-weight: 700;
+      font-size: 22px;
+      margin: -30px 0px 0px 74px;
+      color: green;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .nb-container{
+      position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .nb-wrapper {
+        overflow: hidden;
+        /* display: flex; */
+         align-items: center;
+        width: 100%;
+    }
+    .neckband{
+      display: flex;
+        gap: 10px;
+        transition: transform 0.5s ease-in-out;
+        white-space: nowrap;
+    }
+    .nb {
+        flex: 0 0 auto;
+        width: 240px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .nb img {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+
+/* Ear-phone */
+    .ep h4{
+      text-align: center;
+    }
+    .ep p{
+      font-weight: 700;
+      font-size: 22px;
+      margin: -30px 0px 0px 74px;
+      color: green;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .ep-container{
+      position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .ep-wrapper {
+        overflow: hidden;
+        /* display: flex; */
+         align-items: center;
+        width: 100%;
+    }
+    .earphone{
+      display: flex;
+        gap: 10px;
+        transition: transform 0.5s ease-in-out;
+        white-space: nowrap;
+    }
+    .ep {
+        flex: 0 0 auto;
+        width: 240px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .ep img {
+        width: 100%;
+        border-radius: 4px;
+
+    }
+
+.shop-item-1:hover{content: url(shop-page-img/Earpods/shop-item-1.1.jpg);}
+.shop-item-2:hover{content: url(shop-page-img/Earpods/shop-item-2.1.jpg);}
+.shop-item-3:hover{content: url(shop-page-img/Earpods/shop-item-3.1.jpg);}
+.shop-item-4:hover{content: url(shop-page-img/Earpods/shop-item-4.jpg);}
+.shop-item-5:hover{content: url(shop-page-img/Earpods/shop-item-5.1.jpg);}
+.shop-item-6:hover{content: url(shop-page-img/Earpods/shop-item-6.1.jpg);}
+.shop-item-7:hover{content: url(shop-page-img/Earpods/shop-item-7.1.jpg);}
+.shop-item-8:hover{content: url(shop-page-img/Earpods/shop-item-8.1.jpg);}
+.shop-item-9:hover{content: url(shop-page-img/Earpods/shop-item-9.1.jpg);}
+.shop-item-10:hover{content: url(shop-page-img/Earpods/shop-item-10.1.jpg);}
+.shop-item-11:hover{content: url(shop-page-img/Earpods/shop-item-11.1.jpg);}
+.shop-item-12:hover{content: url(shop-page-img/Earpods/shop-item-12.1.jpg);}
+.shop-item-13:hover{content: url(shop-page-img/Earpods/shop-item-13.1.jpg);}
+.shop-item-14:hover{content: url(shop-page-img/Earpods/shop-item-14.1.jpg);}
+.shop-item-15:hover{content: url(shop-page-img/Earpods/shop-item-15.1.jpg);}
+.shop-item-16:hover{content: url(shop-page-img/Earpods/shop-item-16.1.jpg);}
+.shop-item-17:hover{content: url(shop-page-img/Earpods/shop-item-17.1.jpg);}
+.shop-item-18:hover{content: url(shop-page-img/Earpods/shop-item-18.1.jpg);}
+.shop-nb-1:hover{content: url(shop-page-img/Neckbands/shop-nb-1.1.jpg);}
+.shop-nb-2:hover{content: url(shop-page-img/Neckbands/shop-nb-2.1.jpg);}
+.shop-nb-3:hover{content: url(shop-page-img/Neckbands/shop-nb-3.1.jpg);}
+.shop-nb-4:hover{content: url(shop-page-img/Neckbands/shop-nb-4.1.jpg);}
+.shop-nb-5:hover{content: url(shop-page-img/Neckbands/shop-nb-5.1.jpg);}
+.shop-nb-6:hover{content: url(shop-page-img/Neckbands/shop-nb-6.1.jpg);}
+.shop-nb-7:hover{content: url(shop-page-img/Neckbands/shop-nb-7.1.jpg);}
+.shop-nb-8:hover{content: url(shop-page-img/Neckbands/shop-nb-8.1.jpg);}
+.shop-nb-9:hover{content: url(shop-page-img/Neckbands/shop-nb-9.1.jpg);}
+.shop-nb-10:hover{content: url(shop-page-img/Neckbands/shop-nb-10.1.jpg);}
+.shop-nb-11:hover{content: url(shop-page-img/Neckbands/shop-nb-11.1.jpg);}
+.shop-nb-12:hover{content: url(shop-page-img/Neckbands/shop-nb-12.1.jpg);}
+.shop-we-1:hover{content: url(shop-page-img/Wired-Earphone/shop-we-1.1.jpg);}
+.shop-we-2:hover{content: url(shop-page-img/Wired-Earphone/shop-we-2.1.jpg);}
+.shop-we-3:hover{content: url(shop-page-img/Wired-Earphone/shop-we-3.1.jpg);}
+.shop-we-4:hover{content: url(shop-page-img/Wired-Earphone/shop-we-4.1.jpg);}
+.shop-we-5:hover{content: url(shop-page-img/Wired-Earphone/shop-we-5.1.jpg);}
+.shop-we-6:hover{content: url(shop-page-img/Wired-Earphone/shop-we-6.1.jpg);}
+.shop-we-7:hover{content: url(shop-page-img/Wired-Earphone/shop-we-7.1.jpg);}
+.shop-we-8:hover{content: url(shop-page-img/Wired-Earphone/shop-we-8.1.jpg);}
+.shop-we-9:hover{content: url(shop-page-img/Wired-Earphone/shop-we-9.1.jpg);}
+.shop-we-10:hover{content: url(shop-page-img/Wired-Earphone/shop-we-10.1.jpg);}
+.shop-we-11:hover{content: url(shop-page-img/Wired-Earphone/shop-we-11.1.jpg);}
+.shop-we-12:hover{content: url(shop-page-img/Wired-Earphone/shop-we-12.1.jpg);}
+
+@media screen and (max-width: 779px){
+  .slide {
+    width: 180px;
+  }
+  .slider img {
+    height: 180px;
+  }
+  .slide h4 {
+    font-size: 13px;
+  }
+  .image h3{
+    font-size: 10px;
+  }
+  .nb{
+    width: 180px;
+  }
+  .nb img {
+    height: 180px;
+  }
+  .nb h4 {
+    font-size: 13px;
+  }
+  .nb h3{
+    font-size: 10px;
+  }
+  .ep{
+    width: 180px;
+  }
+  .ep img {
+    height: 180px;
+  }
+  .ep h4 {
+    font-size: 13px;
+  }
+  .ep h3{
+    font-size: 10px;
+  }
+  .marque{
+    top: 7%;
+  }
+}
+
