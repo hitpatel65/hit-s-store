@@ -293,7 +293,7 @@ left: -100%;
     font-size: 10px;
   }
   .marque{
-    top: 5%;
+    display: none;
   }
 }
 
