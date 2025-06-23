@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="hit's-store-login-page.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box" id="login-box">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+            <p id="login-message"></p>
+        </div>
+
+        <div class="form-box" id="register-box" style="display: none;">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button onclick="register()">Register</button>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            <p id="register-message"></p>
+        </div>
+    </div>
+    <script src="hit's-store-login-page.js"></script>
+</body>
+</html>
